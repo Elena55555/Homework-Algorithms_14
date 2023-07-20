@@ -2,16 +2,22 @@ package com.sky.pro.algorithms_the_first;
 
 
 
+
 public class ItemNotFoundException extends RuntimeException {
 
+
     public ItemNotFoundException() {
+
 
     }
 
 
+
     public ItemNotFoundException(String message) {
 
+
         super(message);
+
     }
 
 
