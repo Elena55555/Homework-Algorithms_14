@@ -27,7 +27,7 @@ public class StringListImpl implements StringList {
 
     @Override
 
-    public String add(String item) {
+    public String add1(String item) {
 
         validateSize();
 
@@ -43,7 +43,7 @@ public class StringListImpl implements StringList {
 
     @Override
 
-    public String add(int index, String item) {
+    public String add2(int index, String item) {
 
         validateSize();
 
@@ -97,9 +97,10 @@ public class StringListImpl implements StringList {
 
     @Override
 
-    public String remove(String item) {
+    public String remove1(String item) {
 
         validateItem(item);
+
 
         int index = indexOf(item);
 
@@ -130,7 +131,7 @@ public class StringListImpl implements StringList {
 
     @Override
 
-    public String remove(int index) {
+    public String remove2(int index) {
 
         validateIndex(index);
 
@@ -194,7 +195,7 @@ public class StringListImpl implements StringList {
 
     public int lastIndexOf(String item) {
 
-        for (int i = size-1 ; i >=0 ; i++) {
+        for (int i = size-1 ; i >=0 ; i--) {
 
             if(storage[i].equals(item)){ /*  если найден элемент*/
 
@@ -303,4 +304,7 @@ public class StringListImpl implements StringList {
 
         }
 }
+
+
+
 }

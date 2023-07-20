@@ -9,17 +9,17 @@ public interface StringList {
         // Вернуть добавленный элемент
         // в качестве результата выполнения.
 
-    String add(String item);
-
-        // Добавление элемента
-        // на определенную позицию списка.
-        // Если выходит за пределы фактического
-        // количества элементов или массива,
-        // выбросить исключение.
-        // Вернуть добавленный элемент
-        // в качестве результата выполнения.
-
-    String add(int index, String item);
+//    String add(String item);
+//
+//        // Добавление элемента
+//        // на определенную позицию списка.
+//        // Если выходит за пределы фактического
+//        // количества элементов или массива,
+//        // выбросить исключение.
+//        // Вернуть добавленный элемент
+//        // в качестве результата выполнения.
+//
+//    String add(int index, String item);
 
         // Установить элемент
         // на определенную позицию,
@@ -29,6 +29,10 @@ public interface StringList {
         // фактического количества элементов
         // или выходит за пределы массива.
 
+    String add1(String item);
+
+    String add2(int index, String item);
+
     String set(int index, String item);
 
         // Удаление элемента.
@@ -37,17 +41,21 @@ public interface StringList {
         // элемент отсутствует в списке.
 
 
-    String remove(String item);
+//    String remove(String item);
 
         // Удаление элемента по индексу.
         // Вернуть удаленный элемент
         // или исключение, если подобный
         // элемент отсутствует в списке.
 
-    String remove(int index);
+    String remove1(String item);
+
+//    String remove(int index);
 
         // Проверка на существование элемента.
         // Вернуть true/false;
+
+    String remove2(int index);
 
     boolean contains(String item);
 
